@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Serif Text", serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgb(194, 201, 218);
+}
+
+.product {
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+}
+
+.gallery {
+  flex-basis: 47%;
+  background: rgb(32, 30, 30);
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0.1);
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  padding-top: 100PX;
+
+
+}
+
+.detail {
+  flex-basis: 53%;
+  padding: 40px;
+  padding-left: 60px;
+  background-color: rgb(248, 248, 248);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0.1);
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+
+.detail h1 {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+}
+
+.detail h2 {
+  color: rgb(97, 94, 94);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.detail h3 {
+  color: rgb(60, 151, 60);
+  margin-bottom: 20px;
+}
+
+.detail form {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.size-slect {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.size-slect p {
+  width: 50px;
+}
+
+.size-slect input:checked+span {
+  color: blue;
+  font-weight: 600;
+}
+
+.size-slect input {
+  display: none;
+}
+
+
+.size-slect span {
+  padding: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.color-slect {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.color-slect p {
+  width: 75px;
+}
+
+.color-slect span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.color-1 {
+  background: red;
+}
+
+.color-2 {
+  background: black;
+}
+
+.color-3 {
+  background: gray;
+}
+
+.color-4 {
+  background: green;
+
+}
+
+.color-slect input {
+  display: none;
+}
+
+.color-slect input:checked+span {
+  transform: scale(0.7);
+  box-shadow: 0px 0px 0px 4px white, 0px 0px 0px 6px black;
+}
+
+.quantity-slect {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.quantity-slect p {
+  width: 75px;
+}
+
+.quantity-slect input {
+  background: rgb(255, 247, 247);
+  border: 0;
+  outline: 0;
+  padding: 2px 2px 2px 15px;
+  width: 50px;
+  border-radius: 15px;
+
+}
+
+.bte {
+  background-color: rgba(85, 63, 240);
+  color: white;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  margin-top: 50px;
+  box-shadow: 0 10px 10px rgb(85, 63, 240, 0.25);
+  cursor: pointer;
+}
+
+.control {
+  position: absolute;
+  width: 40px;
+  bottom: 20px;
+  right: 15px;
+}
+
+.btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255,0.5);
+  cursor: pointer;
+  margin: 10px;
+  
+  
+}
+.btn.active{
+  background-color: blue;
+}
